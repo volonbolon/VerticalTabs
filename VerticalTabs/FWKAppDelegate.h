@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "FWKTabBarControllerDelegate.h"
 
-@interface FWKAppDelegate : UIResponder <UIApplicationDelegate>
+@interface FWKAppDelegate : UIResponder <UIApplicationDelegate, FWKTabBarControllerDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
 

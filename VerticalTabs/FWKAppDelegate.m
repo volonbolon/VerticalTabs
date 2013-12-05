@@ -7,12 +7,43 @@
 //
 
 #import "FWKAppDelegate.h"
+#import "FWKTabBarController.h"
+#import "FWKViewController.h"
+#import "UIColor+RandomColor.h"
+
 
 @implementation FWKAppDelegate
 
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
-{
-    // Override point for customization after application launch.
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+
+    UIWindow *window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    [self setWindow:window];
+	
+    FWKTabBarController *tabBarController = [FWKTabBarController new];
+    
+    [tabBarController setDelegate:self];
+    
+    [[self window] setRootViewController:tabBarController];
+    [[self window] addSubview:[tabBarController view]];
+    
+    NSMutableArray *items = [[NSMutableArray alloc] initWithCapacity:5];
+    
+    for ( NSUInteger n = 0; n < 5; n++ ) {
+        
+        UITabBarItem *tabBarItem = [[UITabBarItem alloc] initWithTitle:[NSString stringWithFormat:@"%d", n]
+                                                                 image:nil
+                                                         selectedImage:nil];
+        FWKViewController *vc = [[FWKViewController alloc] init];
+        [vc setTabBarItem:tabBarItem];
+        [[vc view] setBackgroundColor:[UIColor randomColor]];
+        [items addObject:vc];
+        
+    }
+    
+    [tabBarController setViewControllers:items];
+	
+	[[self window] makeKeyAndVisible];
+    
     return YES;
 }
 							
@@ -41,6 +72,21 @@
 - (void)applicationWillTerminate:(UIApplication *)application
 {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+
+#pragma mark - FWKTabBarControllerDelegate
+- (void)tabBarController:(FWKTabBarController *)tabBarController
+ didSelectViewController:(UIViewController *)viewController {
+    
+    NSLog(@"%@", viewController);
+    
+}
+
+- (BOOL)tabBarController:(FWKTabBarController *)tabBarController
+shouldSelectViewController:(UIViewController *)viewController {
+    
+    return ![[[viewController tabBarItem] title] isEqualToString:@"1"];
+    
 }
 
 @end

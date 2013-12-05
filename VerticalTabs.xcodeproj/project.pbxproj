@@ -7,13 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7951C1B2184FE1C600A3CAA4 /* UIColor+RandomColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 7951C1B1184FE1C600A3CAA4 /* UIColor+RandomColor.m */; };
 		79611ABE184FD6B90094763B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79611ABD184FD6B90094763B /* Foundation.framework */; };
 		79611AC0184FD6B90094763B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79611ABF184FD6B90094763B /* CoreGraphics.framework */; };
 		79611AC2184FD6B90094763B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79611AC1184FD6B90094763B /* UIKit.framework */; };
 		79611AC8184FD6B90094763B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 79611AC6184FD6B90094763B /* InfoPlist.strings */; };
 		79611ACA184FD6B90094763B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 79611AC9184FD6B90094763B /* main.m */; };
 		79611ACE184FD6B90094763B /* FWKAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 79611ACD184FD6B90094763B /* FWKAppDelegate.m */; };
-		79611AD1184FD6B90094763B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79611ACF184FD6B90094763B /* Main.storyboard */; };
 		79611AD4184FD6B90094763B /* FWKViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 79611AD3184FD6B90094763B /* FWKViewController.m */; };
 		79611AD6184FD6B90094763B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 79611AD5184FD6B90094763B /* Images.xcassets */; };
 		79611ADD184FD6B90094763B /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79611ADC184FD6B90094763B /* XCTest.framework */; };
@@ -21,6 +21,8 @@
 		79611ADF184FD6B90094763B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79611AC1184FD6B90094763B /* UIKit.framework */; };
 		79611AE7184FD6B90094763B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 79611AE5184FD6B90094763B /* InfoPlist.strings */; };
 		79611AE9184FD6B90094763B /* VerticalTabsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 79611AE8184FD6B90094763B /* VerticalTabsTests.m */; };
+		79611AF5184FD7050094763B /* FWKTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 79611AF4184FD7050094763B /* FWKTabBarController.m */; };
+		79611B46184FE0930094763B /* FWKVerticalTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 79611B45184FE0930094763B /* FWKVerticalTabBar.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +36,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7951C1B0184FE1C600A3CAA4 /* UIColor+RandomColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+RandomColor.h"; sourceTree = "<group>"; };
+		7951C1B1184FE1C600A3CAA4 /* UIColor+RandomColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+RandomColor.m"; sourceTree = "<group>"; };
+		7951C1B4184FF19F00A3CAA4 /* FWKVerticalTabBarDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FWKVerticalTabBarDelegate.h; sourceTree = "<group>"; };
 		79611ABA184FD6B90094763B /* VerticalTabs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VerticalTabs.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		79611ABD184FD6B90094763B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		79611ABF184FD6B90094763B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -44,7 +49,6 @@
 		79611ACB184FD6B90094763B /* VerticalTabs-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "VerticalTabs-Prefix.pch"; sourceTree = "<group>"; };
 		79611ACC184FD6B90094763B /* FWKAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FWKAppDelegate.h; sourceTree = "<group>"; };
 		79611ACD184FD6B90094763B /* FWKAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FWKAppDelegate.m; sourceTree = "<group>"; };
-		79611AD0184FD6B90094763B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		79611AD2184FD6B90094763B /* FWKViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FWKViewController.h; sourceTree = "<group>"; };
 		79611AD3184FD6B90094763B /* FWKViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FWKViewController.m; sourceTree = "<group>"; };
 		79611AD5184FD6B90094763B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -53,6 +57,11 @@
 		79611AE4184FD6B90094763B /* VerticalTabsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "VerticalTabsTests-Info.plist"; sourceTree = "<group>"; };
 		79611AE6184FD6B90094763B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		79611AE8184FD6B90094763B /* VerticalTabsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VerticalTabsTests.m; sourceTree = "<group>"; };
+		79611AF3184FD7050094763B /* FWKTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FWKTabBarController.h; sourceTree = "<group>"; };
+		79611AF4184FD7050094763B /* FWKTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FWKTabBarController.m; sourceTree = "<group>"; };
+		79611B3A184FD9560094763B /* FWKTabBarControllerDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FWKTabBarControllerDelegate.h; sourceTree = "<group>"; };
+		79611B44184FE0930094763B /* FWKVerticalTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FWKVerticalTabBar.h; sourceTree = "<group>"; };
+		79611B45184FE0930094763B /* FWKVerticalTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FWKVerticalTabBar.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,13 +121,15 @@
 		79611AC3184FD6B90094763B /* VerticalTabs */ = {
 			isa = PBXGroup;
 			children = (
+				79611AF2184FD6E70094763B /* Vertical Tabs */,
 				79611ACC184FD6B90094763B /* FWKAppDelegate.h */,
 				79611ACD184FD6B90094763B /* FWKAppDelegate.m */,
-				79611ACF184FD6B90094763B /* Main.storyboard */,
 				79611AD2184FD6B90094763B /* FWKViewController.h */,
 				79611AD3184FD6B90094763B /* FWKViewController.m */,
 				79611AD5184FD6B90094763B /* Images.xcassets */,
 				79611AC4184FD6B90094763B /* Supporting Files */,
+				7951C1B0184FE1C600A3CAA4 /* UIColor+RandomColor.h */,
+				7951C1B1184FE1C600A3CAA4 /* UIColor+RandomColor.m */,
 			);
 			path = VerticalTabs;
 			sourceTree = "<group>";
@@ -150,6 +161,19 @@
 				79611AE5184FD6B90094763B /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		79611AF2184FD6E70094763B /* Vertical Tabs */ = {
+			isa = PBXGroup;
+			children = (
+				79611AF3184FD7050094763B /* FWKTabBarController.h */,
+				79611AF4184FD7050094763B /* FWKTabBarController.m */,
+				79611B3A184FD9560094763B /* FWKTabBarControllerDelegate.h */,
+				79611B44184FE0930094763B /* FWKVerticalTabBar.h */,
+				79611B45184FE0930094763B /* FWKVerticalTabBar.m */,
+				7951C1B4184FF19F00A3CAA4 /* FWKVerticalTabBarDelegate.h */,
+			);
+			name = "Vertical Tabs";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,7 +255,6 @@
 			files = (
 				79611AD6184FD6B90094763B /* Images.xcassets in Resources */,
 				79611AC8184FD6B90094763B /* InfoPlist.strings in Resources */,
-				79611AD1184FD6B90094763B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -250,8 +273,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				79611AF5184FD7050094763B /* FWKTabBarController.m in Sources */,
+				79611B46184FE0930094763B /* FWKVerticalTabBar.m in Sources */,
 				79611AD4184FD6B90094763B /* FWKViewController.m in Sources */,
 				79611ACA184FD6B90094763B /* main.m in Sources */,
+				7951C1B2184FE1C600A3CAA4 /* UIColor+RandomColor.m in Sources */,
 				79611ACE184FD6B90094763B /* FWKAppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -281,14 +307,6 @@
 				79611AC7184FD6B90094763B /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		79611ACF184FD6B90094763B /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				79611AD0184FD6B90094763B /* Base */,
-			);
-			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 		79611AE5184FD6B90094763B /* InfoPlist.strings */ = {
@@ -463,6 +481,7 @@
 				79611AEE184FD6B90094763B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		79611AEF184FD6B90094763B /* Build configuration list for PBXNativeTarget "VerticalTabsTests" */ = {
 			isa = XCConfigurationList;
@@ -471,6 +490,7 @@
 				79611AF1184FD6B90094763B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
